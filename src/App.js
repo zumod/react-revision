@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Name from "./component/name";
+import Age from "./component/age";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  state = {
+    name: "Sumod",
+    age: 25,
+    life: "null",
+  };
+
+handleChange = () => {
+  this.setState({
+    name: "John",
+    age: 30
+  })
+}
+handleChange1 = () => {
+  this.setState({
+    name: "Sumod",
+    age: 25
+  })
 }
 
-export default App;
+
+  render() {
+    return (
+      <div className="App">
+        <h1>Welcome to the app</h1>
+        <Name name={this.state.name}/>
+        <Age age={this.state.age}/>
+        <button onClick={this.handleChange}>Click me</button>
+        <button onClick={this.handleChange1}>Go back</button>
+      </div>
+    );
+  }
+}
