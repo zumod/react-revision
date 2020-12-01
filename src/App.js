@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
+import Input from "./component/Input";
 // import Name from "./component/Name";
 // import Age from "./component/Age";
 // import Counter from "./component/Counter";
-import Forms from "./component/Forms";
+// import Forms from "./component/Forms";
 
 export default class App extends Component {
   state = {
@@ -35,8 +36,9 @@ export default class App extends Component {
         <h2>{this.state.age}</h2>
         <button onClick={this.handleChange}>Click me to change</button>
         <button onClick={this.handleChangeBack}>Change back</button>
-        <Counter /> */}
-        <Forms />
+        <Counter />
+        <Forms /> */}
+        <Input />
       </div>
     );
   }
