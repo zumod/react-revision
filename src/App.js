@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import Input from "./component/Input";
+import Uncontrolled_input from "./component/Uncontrolled_input";
+// import Input from "./component/Input";
 // import Name from "./component/Name";
 // import Age from "./component/Age";
 // import Counter from "./component/Counter";
@@ -37,8 +38,9 @@ export default class App extends Component {
         <button onClick={this.handleChange}>Click me to change</button>
         <button onClick={this.handleChangeBack}>Change back</button>
         <Counter />
-        <Forms /> */}
-        <Input />
+        <Forms /> */
+        /* <Input /> */}
+        <Uncontrolled_input />
       </div>
     );
   }
