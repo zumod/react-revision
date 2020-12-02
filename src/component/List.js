@@ -41,7 +41,7 @@ export default class List extends Component {
         <h1>List Component</h1> 
         <ul>
             {this.state.data.map((value, index, arr) => // key is set to a unique value to update a child prop only
-                <li key={value.id}> 
+                <li key={index}> 
                     {value.id}-{value.name}-{value.age}
                 </li>
             )}
