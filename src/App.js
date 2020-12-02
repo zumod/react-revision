@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 // import Lifecycle_method from "./component/Lifecycle_method";
-// import List from "./component/List";
+import List from "./component/List";
 // import Uncontrolled_input from "./component/Uncontrolled_input";
 // import Input from "./component/Input";
 // import Name from "./component/Name";
@@ -40,11 +40,11 @@ export default class App extends Component {
         <button onClick={this.handleChange}>Click me to change</button>
         <button onClick={this.handleChangeBack}>Change back</button>
         <Counter />
-        <Forms /> */
-        /* <Input />
+        <Forms />
+        <Input />
         <Uncontrolled_input />
-        <List /> */}
-        {/* <Lifecycle_method /> */}
+        <Lifecycle_method /> */}
+        <List />
       </div>
     );
   }

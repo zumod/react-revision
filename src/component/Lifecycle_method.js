@@ -23,7 +23,7 @@ export default class Lifecycle_method extends PureComponent {
         //this function will stop working when we switch to other page
     }
 
-    shouldComponentUpdate(){ // uses with PureComponent, it will not re-render page when same data is repeated
+    shouldComponentUpdate(){ // used as PureComponent imported from React, it will not re-render page when same data is repeated
         
     }
 
