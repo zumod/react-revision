@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import Hooks from "./component/Hooks";
-import List from "./component/List";
 
 export default class App extends Component {
     render() {
+        console.log("parent component");
         return (
-            <div className="App">
+            <div>
                 <Hooks />
-                <List />
             </div>
         );
     }

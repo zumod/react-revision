@@ -23,3 +23,22 @@ useEffect(() => {
 <button type="button" onClick={setName(!name)}> // if name is set true in useState, then it will toggle to false
     Toggle
 </button>;
+
+useRef() // useRef is to refer a current element, <input ref={inputRef}>
+// ex: const inputRef = useRef();
+//  const accessRef = () => console.log(useRef.current)
+// it returns a current ref object, that is logged in the above example
+
+memo() // used to stop re-rendering same value change (Same as using Pure Component in Class components)
+// ex: export defalut memo(App); where app is the component we dont want to re-render when parent updated
+
+useCallback() // used with the meme() to further optimize the perfomance of react component
+// it will stop re-rendering the same value, wrapping it with the parent method
+//ex:
+/* useCallback(
+    () => {
+        callback
+    },
+    [input],
+) */
+

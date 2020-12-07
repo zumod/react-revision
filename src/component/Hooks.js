@@ -1,4 +1,5 @@
 import React from "react";
+import FunctionCounter from "./FunctionCounter";
 import { useForm } from "./useForm";
 
 const Hooks = () => {
@@ -9,6 +10,7 @@ const Hooks = () => {
     const onClickHandle = () => {
         console.log(data.name, data.email);
     };
+    console.log('parent');
     return (
         <div>
             <h1>Hooks Component</h1>
@@ -27,6 +29,7 @@ const Hooks = () => {
             <button type="button" onClick={onClickHandle}>
                 Submit
             </button>
+            <FunctionCounter />
         </div>
     );
 };
