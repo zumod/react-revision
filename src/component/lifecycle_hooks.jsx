@@ -42,3 +42,5 @@ useCallback() // used with the meme() to further optimize the perfomance of reac
     [input],
 ) */
 
+useMemo() // to stop re-rendering array, object when passing as props
+
