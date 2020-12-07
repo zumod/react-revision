@@ -9,7 +9,6 @@ export default class Forms extends Component {
   
   myChange = (event) => {
     this.setState({
-      [event.target.name]: event.target.value,
       [event.target.name]: event.target.value
     })
   }

@@ -9,7 +9,6 @@ export default class Input extends Component {
 
     inputHandler = (event) => {
         this.setState({
-            [event.target.name]: event.target.value,
             [event.target.name]: event.target.value
         })
     }

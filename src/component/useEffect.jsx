@@ -5,11 +5,11 @@ const [name, setName] = useState("");
 
 useEffect(() => {
     console.log("Running"); // ComponentDidMount lifecycle method
-}, []); // [] empty array is called dependency
+}, []); // [] empty array is called dependency, to stop re-rendering
 
 useEffect(() => {
     console.log("Running"); // ComponentDidUpdate lifecycle method
-}, [name]);
+}, [name]); //dependency is set to name, when name input is changed, this component will re-render
 
 useEffect(() => {
     console.log("Running");
